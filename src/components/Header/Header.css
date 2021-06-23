@@ -1,0 +1,100 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-blue-dark);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 var(--spacing-middle);
+    z-index: 1;
+    height: var(--header-height);
+    justify-content: center;
+    min-width: 300px;
+}
+
+.header_left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header_popular {
+    color: whitesmoke;
+    cursor: pointer;
+    margin-left: var(--spacing-large);
+}
+
+.header_popular:hover {
+    text-decoration: underline;
+}
+
+.header_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_search__global {
+    display: flex;
+    flex-direction: row;
+}
+
+.header_search__global input {
+    width: 30vw;
+    min-width: 120px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+}
+
+.header_search__global button {
+    border: none;
+    outline: none;
+    vertical-align: middle;
+    background-image: url(../../images/icons/search.png);
+    background-color: white;
+    background-size: 20px 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    height: 30px;
+    width: 30px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.header_search__global button:hover {
+    background-image: url(../../images/icons/search_white.png);
+}
+
+.header_search__advanced {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.header_search__advanced:hover {
+    text-decoration: underline;
+}
+
+.header_login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header_login__user {
+    background: linear-gradient(45deg, #90cea1 25%, #01b4e4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #01b4e4;
+    font-weight: bold;
+    margin-right: var(--spacing-middle);
+    cursor: pointer;
+}

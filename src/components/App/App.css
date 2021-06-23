@@ -1,0 +1,81 @@
+:root {
+    --color-blue-dark: #0b2239;
+    --color-blue-dark-20: rgb(11, 34, 57, 0.2);
+    --color-blue-light: #1d5083;
+    --color-green: #008B8B;
+    --spacing-small: 8px;
+    --spacing-middle: 16px;
+    --spacing-large: 32px;
+    --radius: 3px;
+    --header-height: 80px;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 6px;
+    background-color: var(--color-blue-dark-20);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-blue-dark);
+    border-radius: 1px;
+    box-shadow: inset 1px 1px 10px var(--color-blue-dark-20);
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    font-family: Segoe UI, sans-serif;
+    background-color: whitesmoke;
+    letter-spacing: 0.8px;
+}
+
+h1,
+h2,
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+
+
+/* СТАНДАРТНАЯ КНОПКА */
+
+:global(.button) {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: var(--color-blue-dark);
+    border: 2px solid white;
+    border-radius: var(--radius);
+    padding: 8px 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+:global(.button):hover {
+    background-color: var(--color-blue-light);
+}
+
+:global(.reference) {
+    color: var(--color-green);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+:global(.reference):hover {
+    color: var(--color-blue-light);
+}
